@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="273.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sgo.gui.BalcaoListController">
+   <children>
+      <ToolBar prefHeight="38.0" prefWidth="570.0">
+        <items>
+          <Button fx:id="btNewBal" mnemonicParsing="false" onAction="#onBtNewBalAction" text="Novo">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label prefHeight="18.0" prefWidth="355.0" text="Balcão">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="150.0" />
+               </padding>
+            </Label>
+            <Label fx:id="labelUser" textFill="#79d7d5">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableViewBalcao" prefHeight="236.0" prefWidth="417.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNumeroBal" editable="false" prefWidth="54.0" text="Número" />
+            <TableColumn fx:id="tableColumnDataBal" editable="false" prefWidth="73.0" text="Data" />
+            <TableColumn fx:id="tableColumnFuncionarioBal" editable="false" prefWidth="153.0" text="Funcionário" />
+            <TableColumn fx:id="tableColumnTotalBal" editable="false" prefWidth="58.0" text="Total" />
+            <TableColumn fx:id="tableColumnREMOVE" editable="false" minWidth="0.0" prefWidth="55.0" text=" " />
+            <TableColumn fx:id="tableColumnList" editable="false" prefWidth="52.0" text=" " />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

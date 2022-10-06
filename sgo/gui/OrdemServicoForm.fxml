@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="410.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sgo.gui.OrdemServicoFormController">
+   <children>
+      <Label fx:id="labelUser" layoutX="605.0" layoutY="8.0" prefHeight="15.0" prefWidth="58.0" textFill="#7fd4da" AnchorPane.leftAnchor="605.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="16.0" prefHeight="19.0" prefWidth="56.0" text="Número" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="15.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNumeroOS" editable="false" layoutX="127.0" layoutY="15.0" prefHeight="22.0" prefWidth="58.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="15.0" />
+      <Label text="Data" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <DatePicker fx:id="dpDataOS" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="50.0" />
+      <Label text="Filtra(orçto)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="85.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textPesquisa" prefHeight="22.0" prefWidth="70.0" text=" " AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="85.0" />
+      <Button fx:id="btPesquisa" mnemonicParsing="false" onAction="#onBtPesquisaAction" text="Pesquisa" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="85.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label text="Orçamento" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="120.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxOrcamento" prefWidth="150.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="120.0" />
+      <Label layoutX="22.0" layoutY="282.0" text="Parcela" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="155.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <RadioButton fx:id="rbParcelaUnica" mnemonicParsing="false" text="Única" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="155.0" />
+      <RadioButton fx:id="rbParcela02" mnemonicParsing="false" text="2 parcelas" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="155.0" />
+      <RadioButton fx:id="rbParcela03" mnemonicParsing="false" text="3 parcelas" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="155.0" />
+      <Label text="Prazo" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="190.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbPrazoAvista" mnemonicParsing="false" text="A vista" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="190.0" />
+      <RadioButton fx:id="rbPrazo10" mnemonicParsing="false" text="10 dias" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="190.0" />
+      <RadioButton fx:id="rbPrazo15" mnemonicParsing="false" text="15 dias" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="190.0" />
+      <RadioButton fx:id="rbPrazo30" mnemonicParsing="false" text="30 dias" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="190.0" />
+      <Label text="Pagamento" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="225.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbPagamentoDinheiro" mnemonicParsing="false" text="Dinheiro" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="225.0" />
+      <RadioButton fx:id="rbPagamentoPix" mnemonicParsing="false" text="Pix" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="225.0" />
+      <RadioButton fx:id="rbPagamentoDebito" mnemonicParsing="false" text="Débito" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="225.0" />
+      <RadioButton fx:id="rbPagamentoCC" mnemonicParsing="false" text="Crédito" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="225.0" />
+      <Label text="1o pagamento" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="260.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpData1oOS" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="260.0" />
+      <Label layoutX="21.0" layoutY="335.0" text="Nota Fiscal" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="295.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="textNnfOS" layoutX="119.0" layoutY="333.0" prefHeight="22.0" prefWidth="61.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="295.0" />
+      <Label layoutX="19.0" layoutY="370.0" text="Observação" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="330.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="textObservacaoOS" layoutX="119.0" layoutY="369.0" prefHeight="22.0" prefWidth="354.0" text=" " AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="330.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btSaveOS" layoutX="119.0" layoutY="411.0" mnemonicParsing="false" onAction="#onBtSaveOSAction" prefHeight="22.0" prefWidth="82.0" text="Ok" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="365.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCancelOS" layoutX="335.0" layoutY="411.0" mnemonicParsing="false" onAction="#onBtCancelOSAction" prefHeight="22.0" prefWidth="82.0" text="Cancela" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="365.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" top="2.0" />
+         </padding>
+      </Button>
+      <Label fx:id="labelErrorDataOS" layoutX="496.0" layoutY="58.0" prefHeight="19.0" prefWidth="175.0" textFill="#ee0909" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorOrcamentoOS" layoutX="501.0" layoutY="90.0" prefHeight="15.0" prefWidth="227.0" text=" " textFill="#e40d0d" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorParcelaOS" layoutX="375.0" layoutY="156.0" prefHeight="15.0" prefWidth="175.0" text=" " textFill="#f50a0a" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="155.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorPrazoOS" layoutX="463.0" layoutY="193.0" prefHeight="15.0" prefWidth="175.0" text=" " textFill="#ee0808" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="190.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorPagamentoOS" layoutX="453.0" layoutY="212.0" prefHeight="15.0" prefWidth="175.0" text=" " textFill="#e10b0b" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorData1oOS" layoutX="130.0" layoutY="213.0" prefHeight="15.0" prefWidth="175.0" text=" " textFill="#f51212" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorNnfOS" layoutX="537.0" layoutY="295.0" prefHeight="15.0" prefWidth="175.0" text=" " textFill="#e81818" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="295.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

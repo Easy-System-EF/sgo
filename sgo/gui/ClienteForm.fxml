@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="444.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sgo.gui.ClienteFormController">
+   <children>
+      <Label layoutX="212.0" layoutY="58.0" prefHeight="19.0" prefWidth="56.0" text="Código" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCodigoCli" editable="false" layoutX="127.0" layoutY="15.0" prefHeight="22.0" prefWidth="58.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="10.0" />
+      <Label text="Nome" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNomeCli" prefHeight="22.0" prefWidth="251.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="40.0" />
+      <Label text="Rua" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textRuaCli" prefHeight="22.0" prefWidth="251.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="70.0" />
+      <Label text="Complemento" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textComplementoCli" prefHeight="22.0" prefWidth="161.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0" />
+      <Label text="Nº" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNumeroCli" prefHeight="22.0" prefWidth="53.0" AnchorPane.leftAnchor="295.0" AnchorPane.topAnchor="100.0" />
+      <Label text="Cep" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCepCli" prefHeight="22.0" prefWidth="84.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="130.0" />
+      <Label text="Bairro" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textBairroCli" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="160.0" />
+      <Label text="Cidade" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="190.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCidadeCli" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="190.0" />
+      <Label text="UF" AnchorPane.leftAnchor="245.0" AnchorPane.topAnchor="190.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textUfCli" layoutX="263.0" prefHeight="22.0" prefWidth="33.0" AnchorPane.leftAnchor="263.0" AnchorPane.topAnchor="190.0" />
+      <Label text="DDD" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textDdd01Cli" prefHeight="22.0" prefWidth="33.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="220.0" />
+      <Label text="Telefone" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textTelefone01Cli" prefHeight="22.0" prefWidth="99.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="220.0" />
+      <Label text="DDD" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textDdd02Cli" prefHeight="22.0" prefWidth="33.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="250.0" />
+      <Label text="Telefone" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textTelefone02Cli" prefHeight="22.0" prefWidth="99.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="250.0" />
+      <Label layoutX="22.0" layoutY="282.0" text="Pessoa" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbFisica" mnemonicParsing="false" text="Física" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="280.0" />
+      <RadioButton fx:id="rbJuridica" mnemonicParsing="false" text="Jurídica" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="280.0" />
+      <Label layoutX="21.0" layoutY="335.0" text="Cpf" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="310.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCpfCli" layoutX="119.0" layoutY="333.0" prefHeight="22.0" prefWidth="198.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="310.0" />
+      <Label layoutX="19.0" layoutY="370.0" text="Cnpj" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCnpjCli" layoutX="119.0" layoutY="369.0" prefHeight="22.0" prefWidth="198.0" text=" " AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="340.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <Label text="Email" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="370.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textEmailCli" prefHeight="22.0" prefWidth="251.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="370.0" />
+      <Button fx:id="btSaveCli" layoutX="119.0" layoutY="411.0" mnemonicParsing="false" onAction="#onBtSaveAction" prefHeight="22.0" prefWidth="82.0" text="Ok" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="411.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCancelCli" layoutX="335.0" layoutY="411.0" mnemonicParsing="false" onAction="#onBtCancelAction" prefHeight="22.0" prefWidth="82.0" text="Cancela" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="411.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" top="2.0" />
+         </padding>
+      </Button>
+      <Label fx:id="labelErrorNomeCli" layoutX="496.0" layoutY="58.0" prefHeight="19.0" prefWidth="206.0" text=" " textFill="#ee0909" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorRuaCli" layoutX="501.0" layoutY="90.0" prefHeight="15.0" prefWidth="206.0" text=" " textFill="#e40d0d" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorBairroCli" layoutX="138.0" layoutY="243.0" prefHeight="15.0" prefWidth="206.0" text=" " textFill="#f50a0a" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorCidadeCli" layoutX="463.0" layoutY="193.0" prefHeight="15.0" prefWidth="206.0" text=" " textFill="#ee0808" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="190.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorUFCli" layoutX="453.0" layoutY="212.0" prefHeight="15.0" prefWidth="206.0" text=" " textFill="#e10b0b" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorPessoaCli" layoutX="263.0" layoutY="303.0" prefHeight="15.0" prefWidth="206.0" text=" " textFill="#e81818" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorCpfCli" layoutX="487.0" layoutY="337.0" prefHeight="15.0" prefWidth="206.0" text=" " textFill="#e81818" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="310.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorCnpjCli" layoutX="487.0" layoutY="373.0" prefHeight="15.0" prefWidth="206.0" text=" " textFill="#e81818" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorTelefone01Cli" layoutX="130.0" layoutY="213.0" prefHeight="15.0" prefWidth="206.0" text=" " textFill="#f51212" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorEmailCli" layoutX="537.0" layoutY="295.0" prefHeight="15.0" prefWidth="206.0" text=" " textFill="#e81818" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="370.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUser" layoutX="553.0" layoutY="14.0" textFill="#80c9c8">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
